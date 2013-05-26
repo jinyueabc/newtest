@@ -1,0 +1,24 @@
+<html>
+<title>DIV层切换</title>
+<script language="JavaScript" type="text/javascript">
+    function ChangeDiv(divId,divName,zDivCount)
+    {
+        for(i=0;i<=zDivCount;i++)
+        {
+            document.getElementById(divName+i).style.display="none";
+//将所有的层都隐藏
+        }
+        document.getElementById(divName+divId).style.display="block";
+//显示当前层
+    }
+</script>
+</head>
+<body>
+<span onclick="JavaScript:ChangeDiv('0','JKDiv_',2)" style="cursor:hand;">内容一</span>
+<span onclick="JavaScript:ChangeDiv('1','JKDiv_',2)" style="cursor:hand;">内容二</span>
+<span onclick="JavaScript:ChangeDiv('2','JKDiv_',2)" style="cursor:hand;">内容三</span>
+<div id="JKDiv_0" style="font-size:14px;margin:20px;color:#FF0000;">内容部分第一区</div>
+<div id="JKDiv_1" style="display:none;font-size:14px;margin:10px;color:#FF0000;">内容部分第二区</div>
+<div id="JKDiv_2" style="display:none;font-size:14px;margin:10px;color:#FF0000;">内容部分第三区</div>
+</body>
+</html>

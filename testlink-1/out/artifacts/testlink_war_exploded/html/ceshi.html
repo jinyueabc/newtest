@@ -1,0 +1,206 @@
+<html>
+<head>
+    <style>
+        body{
+            text-align: center;
+            background: #b0c4de;
+        }
+        input {
+            width: 300px;
+            border-left: 0px;
+            border-right: 0px;
+            border-top: 0px;
+            border-bottom:0px;
+
+        }
+      table{
+           border:  1px solid #87ceeb;
+            border-left: 0px;
+          border-bottom: 0px;;
+            font-size: 13px;
+           font-family: "黑体";
+          width: auto;
+        }
+      td{
+          white-space: nowrap;
+
+          width: auto;
+          border-left: 1px solid #87ceeb;
+          border-right: 0px;
+          border-top: 0px;
+          border-bottom:1px solid #87ceeb;
+          padding-top:5px;
+          padding-left:5px;
+          padding-right:5px;
+          padding-bottom:0px;
+
+      }
+        select {
+            margin:-2px;
+            width: 300px;
+            border-left: 0px;
+            border-right: 0px;
+            border-top: 0px;
+        }
+        div{
+            background-color: #f5f5dc;
+            text-align: center;
+            width: 800px;
+        }
+    </style>
+    <script language="JavaScript" type="text/javascript">
+        function ChangeDiv(divId,divName,zDivCount)
+        {
+            for(i=0;i<=zDivCount;i++)
+            {
+                document.getElementById(divName+i).style.display="none";
+//将所有的层都隐藏
+            }
+            document.getElementById(divName+divId).style.display="block";
+//显示当前层
+        }
+    </script>
+</head>
+<body><div>
+    <table>
+        <tr>
+            <td colspan="4" style="height: 50px;width:800px;text-align: center;font-size: 25px;">省公司合同审批单</td>
+        </tr>
+        <tr>
+            <td><span onclick="JavaScript:ChangeDiv('0','JKDiv_',2)" style="cursor:hand;"><input style="width: 50px;" type="button" value="基本信息"></span></td>
+            <td><span onclick="JavaScript:ChangeDiv('1','JKDiv_',2)" style="cursor:hand;">财务信息</span></td>
+            <td><span onclick="JavaScript:ChangeDiv('2','JKDiv_',2)" style="cursor:hand;">预算信息</span></td>
+            <td><span onclick="JavaScript:ChangeDiv('3','JKDiv_',2)" style="cursor:hand;">签章信息</span></td>
+        </tr>
+    </table>
+
+
+
+<div id="JKDiv_0" style="font-size:14px;margin:20px;color:#FF0000;">
+<table>
+
+    <tr>
+        <td>合同名称</td>
+        <td><input type="text"></td>
+
+        <td>合同名称</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>合同流水号</td>
+        <td><input type="text"></td>
+
+        <td>合同编号</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>合同大类</td>
+        <td><input type="text"></td>
+       <td>合同小类</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>是否框架协议</td>
+        <td><input type="radio" name="isframe">
+            </td>
+       <td>合同名称</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>合同名称</td>
+        <td><select>
+            <option>122222222222222222</option>
+            <option>2</option>
+            <option>3</option>
+        </select></td>
+        <td>合同名称</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>框架协议金额上限</td>
+        <td><input type="text"></td>
+        <td>合同名称</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>合同名称</td>
+        <td><input type="text"></td>
+        <td>合同名称</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>合同名称</td>
+        <td><input type="text"></td>
+       <td>合同名称</td>
+        <td><input type="text"></td>
+    </tr>
+     <tr>
+        <td colspan="4" >
+            <textarea cols="96" rows="6"></textarea>
+        </td>
+
+     </tr>
+    <tr>
+        <td colspan="4" >
+            <textarea cols="96" rows="6"></textarea>
+        </td>
+
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>王强</td>
+        <td>同意</td>
+        <td>2013-09-09</td>
+    </tr>     <tr>
+        <td>1</td>
+        <td>王强</td>
+        <td>同意</td>
+        <td>2013-09-09</td>
+    </tr>     <tr>
+        <td>1</td>
+        <td>王强</td>
+        <td>同意</td>
+        <td>2013-09-09</td>
+    </tr>     <tr>
+        <td>1</td>
+        <td>王强</td>
+        <td>同意</td>
+        <td>2013-09-09</td>
+    </tr>
+    <tr>
+        <td colspan="4" >
+            <textarea cols="96" rows="6"></textarea>
+        </td>
+
+    </tr>
+</table>
+</div>
+    <div id="JKDiv_1" style="display:none;font-size:14px;margin:10px;color:#FF0000;">
+       <table> <tr>
+            <td>1</td>
+            <td>王强</td>
+            <td>同意</td>
+            <td>2013-09-09</td>
+        </tr>     <tr>
+        <td>1</td>
+        <td>王强</td>
+        <td>同意</td>
+        <td>2013-09-09</td>
+    </tr>     <tr>
+        <td>1</td>
+        <td>王强</td>
+        <td>同意</td>
+        <td>2013-09-09</td>
+    </tr>     <tr>
+        <td>1</td>
+        <td>王强</td>
+        <td>同意</td>
+        <td>2013-09-09</td>
+    </tr>
+       </table>
+    </div>
+    <div id="JKDiv_2" style="display:none;font-size:14px;margin:10px;color:#ff0000;">内容部分第三区</div>
+    <div id="JKDiv_3" style="display:none;font-size:14px;margin:10px;color:#ff2a0c;">内容部分第四区</div>
+</div>
+</body>
+</html>
